@@ -65,7 +65,7 @@ header h1 {
 }
 
 .gallery img {
-    width: calc(33% - 20px);
+    width: 600px;
     border-radius: 8px;
     transition: transform 0.3s;
 }
@@ -80,7 +80,6 @@ header h1 {
     gap: 25px;
     flex-wrap: wrap;
 }
-
 .card {
     background: white;
     padding: 20px;
@@ -89,10 +88,20 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
-
-.card:hover {
-    transform: translateY(-5px);
+.card-container {
+    width: 90%;
 }
+
+
+.image-section img {
+    width: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
 
 
 footer {
