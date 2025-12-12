@@ -74,23 +74,47 @@ header h1 {
     transform: scale(1.05);
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 925px;      
+    height: 600px;    
+    object-fit: cover; 
+    border-radius: 6px; 
+}
+
 
 .card-container {
     display: flex;
-    gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
+
 .card {
+    width: 280px;
     background: white;
-    padding: 20px;
-    width: calc(33% - 20px);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: 0.2s;
 }
-.card-container {
-    width: 90%;
+
+.card:hover {
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    transform: scale(1.02);
 }
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 
 
 .image-section img {
